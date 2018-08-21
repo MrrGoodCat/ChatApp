@@ -7,16 +7,16 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  
   items: FirebaseListObservable<any[]>;
   msg: string = '';
 
-  constructor(public af: AngularFireDatabase){
+  constructor(public af: AngularFireDatabase) {
     this.items = af.list('/messages');
   }
 
-  send(chatMsg: string){
+  send(chatMsg: string) {
     this.items.push({ message: chatMsg });
-    this.msg = '';  
+    this.msg = '';
   }
 }

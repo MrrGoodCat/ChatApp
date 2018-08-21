@@ -1,3 +1,4 @@
+
 <div class="container">
   <div class="row columns">
     <div id="iface">
@@ -8,7 +9,7 @@
       <div class="details-container" *ngFor="let item of items | async; let i = index">
         <div class="row">
           <div class="medium-9 columns">
-            <p>{{ item.message}}</p>
+            <p>{{ item.message }}</p>
           </div>
           <div class="medium-3 columns">
             <button>delete</button>
@@ -16,18 +17,7 @@
           </div>
         </div>
       </div>
-
-      <div class="details-container">
-        <div class="row">
-          <div class="medium-9 columns">
-            <input type="text" value="">
-          </div>
-          <div class="medium-3 columns">
-            <button>delete</button>
-            <button>edit</button>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>
